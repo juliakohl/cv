@@ -1,0 +1,184 @@
+@frame-color: rgb(18, 18, 29);
+@lightest-color: white;
+@mute-color: rgb(48, 48, 77);
+
+@special-font: 'Poiret One', cursive;
+@h1-font: 'Great Vibes', cursive;
+@basic-font: 'Roboto', sans-serif;
+
+@xl-fs: 400%;
+@md-fs: 1.1rem;
+
+@mxl-fs: 225%;
+
+@md-pad: 2rem;
+
+body{
+    font-family: @basic-font;
+    color: @lightest-color;
+    font-size: @md-fs;
+
+    a{
+        color: @lightest-color;
+        text-decoration: none;
+        &:hover{
+            color: @lightest-color;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    h1{
+        font-family: @h1-font;
+        font-size: @xl-fs;
+        line-height: 75%;
+        small{
+            font-family: @special-font;
+            font-size: @md-fs;
+        }
+    }
+
+    div{
+        &.frame{
+            position: relative;
+            padding: 2rem 2rem 4rem 12rem;
+            background-color: @frame-color;
+            width: 100vw;
+            height: 100vh;
+            &.mobile{
+                padding: 0;
+            }
+            .nav{
+                position: absolute;
+                left: 16px;
+                top: 24px;
+                color: @lightest-color;
+                font-family: @special-font;
+                ul{
+                    list-style: none;
+                    text-align: center;
+                    li{
+                        margin: 15px;
+                        margin-left: 0;
+                    }
+                    .profile-img{
+                        width: 75px;
+                        border-radius: 100%;
+                        border: 1px solid @lightest-color;
+                        &:hover{
+                            border: 3px solid @lightest-color;
+                        }
+                    }
+                }
+            }
+            .mnav{
+                &.inactive{
+                    width: 0;
+                    padding: 0;
+                    ul{
+                        display: none;
+                    }
+                    i{
+                        position: absolute;
+                        left: 0;
+                        color: @frame-color;
+                        &#menu-icon{
+                            font-size: 32px!important;
+                        }
+                    }
+                }
+                text-align: center;
+                height: 100vh;
+                width: 175px;
+                background-color: @frame-color;
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: @lightest-color;
+                font-family: @special-font;
+                padding: 1rem;
+                padding-left: 0.6rem;
+                z-index: 1000;
+                i{
+                    position: absolute;
+                    top: 4px;
+                    left: 124px;
+                }
+                ul{
+                    list-style: none;
+                    li{
+                        margin: 15px;
+                        margin-left: 0;
+                    }
+                    .profile-img{
+                        width: 75px;
+                        border-radius: 100%;
+                        border: 1px solid @lightest-color;
+                    }
+                }
+            }
+        }
+        &.content{
+            color: @frame-color;
+            background-color: @lightest-color;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding: 2rem 2rem;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+        }
+        &.credits{
+            position: absolute;
+            color: @mute-color;
+            font-size: small;
+            left: 2rem;
+            width: 7rem;
+            text-align: center;
+            bottom: 4rem;
+            a{
+                color: @mute-color;
+            }
+        }
+        &.copyright{
+            position: absolute;
+            right: 2rem;
+            font-family: @special-font;
+            bottom: 1rem;
+        }
+    }
+}
+
+.layout-1-2:not(&.sm){
+    .row div.col-md-6:first-child{
+        border-right: 1px solid @frame-color;
+    }
+    .row div.col-md-6 .row:first-child .col-12:first-child{
+        border-bottom: 1px solid @frame-color;
+    }
+}
+
+div.row>*:first-child{
+    padding: @md-pad;
+}
+
+.lightest-color{
+    color: @lightest-color;
+}
+
+.no-display{
+    display: none;
+}
+
+.init-display{
+    display: initial;
+}
+
+@media screen and (max-width: 767px){
+    body h1{
+        font-size: @mxl-fs;
+    }
+}
+

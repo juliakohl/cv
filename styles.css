@@ -1,143 +1,155 @@
-a{
-    color: #8fbaf3;
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1.1rem;
+}
+body a {
+  color: white;
+  text-decoration: none;
+}
+body a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+body h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 400%;
+  line-height: 75%;
+}
+body h1 small {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.1rem;
+}
+body div.frame {
+  position: relative;
+  padding: 2rem 2rem 4rem 12rem;
+  background-color: #12121d;
+  width: 100vw;
+  height: 100vh;
+}
+body div.frame.mobile {
+  padding: 0;
+}
+body div.frame .nav {
+  position: absolute;
+  left: 16px;
+  top: 24px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+}
+body div.frame .nav ul {
+  list-style: none;
+  text-align: center;
+}
+body div.frame .nav ul li {
+  margin: 15px;
+  margin-left: 0;
+}
+body div.frame .nav ul .profile-img {
+  width: 75px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+body div.frame .nav ul .profile-img:hover {
+  border: 3px solid white;
+}
+body div.frame .mnav {
+  text-align: center;
+  height: 100vh;
+  width: 175px;
+  background-color: #12121d;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  padding: 1rem;
+  padding-left: 0.6rem;
+  z-index: 1000;
+}
+body div.frame .mnav.inactive {
+  width: 0;
+  padding: 0;
+}
+body div.frame .mnav.inactive ul {
+  display: none;
+}
+body div.frame .mnav.inactive i {
+  position: absolute;
+  left: 0;
+  color: #12121d;
+}
+body div.frame .mnav.inactive i#menu-icon {
+  font-size: 32px!important;
+}
+body div.frame .mnav i {
+  position: absolute;
+  top: 4px;
+  left: 124px;
+}
+body div.frame .mnav ul {
+  list-style: none;
+}
+body div.frame .mnav ul li {
+  margin: 15px;
+  margin-left: 0;
+}
+body div.frame .mnav ul .profile-img {
+  width: 75px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+body div.content {
+  color: #12121d;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+body div.credits {
+  position: absolute;
+  color: #30304d;
+  font-size: small;
+  left: 2rem;
+  width: 7rem;
+  text-align: center;
+  bottom: 4rem;
+}
+body div.credits a {
+  color: #30304d;
+}
+body div.copyright {
+  position: absolute;
+  right: 2rem;
+  font-family: 'Poiret One', cursive;
+  bottom: 1rem;
+}
+.layout-1-2:not(.sm) .row div.col-md-6:first-child {
+  border-right: 1px solid #12121d;
+}
+.layout-1-2:not(.sm) .row div.col-md-6 .row:first-child .col-12:first-child {
+  border-bottom: 1px solid #12121d;
+}
+div.row > *:first-child {
+  padding: 2rem;
+}
+.lightest-color {
+  color: white;
+}
+.no-display {
+  display: none;
+}
+.init-display {
+  display: initial;
+}
+@media screen and (max-width: 767px) {
+  body h1 {
+    font-size: 225%;
   }
-  
-  body {
-    background-color: #ffffff;
-    margin: 0;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-  }
-  
-  div {
-  
-  }
-  
-  h1{
-    font-size: 5.625rem;
-    font-family: 'Sacramento', cursive;
-    color: #0245a3;
-  }
-  
-  h2{
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.5rem;
-    font-weight: lighter;
-    color: #0245a3;
-  }
-  
-  h3{
-    color: #8fbaf3;
-  }
-  
-  table {
-    align-items: center;
-  }
-  
-  td {
-    width: 20%;
-    text-align: center;
-  }
-  
-  td:hover {
-    background-color: #f2f4f6;
-  }
-  
-  /*Klassen*/
-  .bottom-container {
-    background-color: #0245a3;
-    margin-bottom: 0;
-    margin-top: 2em;
-    padding-top: 1em;
-  }
-  
-  .btn {
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    font-family: 'Oswald', sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    background: #0245a3;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #002861;
-    text-decoration: none;
-  }
-  
-  .BuLi-Logo{
-    float: right;
-    width: 20%;
-  }
-  
-  .credit{
-    margin-bottom: 0;
-    padding-bottom: 1em;
-    color: #f2f4f6;
-  }
-  
-  .EC-description{
-  
-  }
-  
-  .EC-image{
-    float:left;
-    width: 20%;
-    padding-right: 5%;
-  }
-  
-  .footer-link{
-  }
-  
-  .fussball-description{
-  
-  }
-  
-  .heading {
-    line-height: 2;
-    position: relative;
-    height: 100vh;
-    text-align: center;
-    background-color: #f2f4f6;
-  }
-  
-  .middle-container {
-    background-color: #ffffff;
-  }
-  
-  .profile img {
-    height: 20%;
-    width: 20%;
-  }
-  
-  .skill-row{
-    text-align: left;
-    width: 70%;
-    margin-left: 15%;
-    margin-bottom: 5%;
-    background-color: #ffffff;
-  }
-  
-  .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  
-  /*
-  ._2XBDTIVigBJDybhZvL-hU3{
-    width: 3.125rem;
-  }
-  */
-  
-  /*ID*/
-  #name{
-    margin-bottom: 0;
-  }
+}
