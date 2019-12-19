@@ -114,15 +114,11 @@ body div.content {
 }
 body div.credits {
   position: absolute;
-  color: #30304d;
   font-size: small;
   left: 2rem;
   width: 7rem;
   text-align: center;
   bottom: 4rem;
-}
-body div.credits a {
-  color: #30304d;
 }
 body div.copyright {
   position: absolute;
@@ -141,6 +137,9 @@ div.row > *:first-child {
 }
 .lightest-color {
   color: white;
+}
+.active {
+  font-weight: bold!important;
 }
 .no-display {
   display: none;
