@@ -1,4 +1,5 @@
-@frame-color: rgb(18, 18, 29);
+// @frame-color: rgb(18, 18, 29);
+@frame-color: #0c0805;
 @lightest-color: white;
 @mute-color: rgb(48, 48, 77);
 
@@ -9,7 +10,7 @@
 @xl-fs: 400%;
 @md-fs: 1.1rem;
 
-@mxl-fs: 225%;
+@mxl-fs: 250%;
 
 @md-pad: 2rem;
 
@@ -17,7 +18,7 @@ body{
     font-family: @basic-font;
     color: @lightest-color;
     font-size: @md-fs;
-
+    
     a{
         color: @lightest-color;
         text-decoration: none;
@@ -32,17 +33,34 @@ body{
         font-family: @h1-font;
         font-size: @xl-fs;
         line-height: 75%;
+        margin-bottom: 3rem;
+        &.mobile{
+            margin-bottom: 0;
+            line-height: 110%;
+            margin: 10%;
+            font-size: @mxl-fs;
+        }
         small{
             font-family: @special-font;
             font-size: @md-fs;
         }
     }
 
+    h2, h3, h4, h5, h6{
+        font-family: @special-font;
+    }
+
+    ul{
+        list-style: none;
+    }
+      
     div{
         &.frame{
             position: relative;
             padding: 2rem 2rem 4rem 12rem;
             background-color: @frame-color;
+            background-image: url('images/Standard.jpg');
+            background-size: cover;
             width: 100vw;
             height: 100vh;
             &.mobile{
@@ -129,6 +147,9 @@ body{
             overflow-y: auto;
             overflow-x: hidden;
             position: relative;
+            a{
+                color: @frame-color;
+            }
         }
         &.credits{
             position: absolute;
@@ -152,34 +173,44 @@ body{
 }
 
 .layout-1-2:not(&.sm){
+    hr{
+        width: 50%;
+    }
     .row div.col-md-6:first-child{
-        border-right: 1px solid @frame-color;
+        border-right: 0.5px solid @frame-color;
     }
     .row div.col-md-6 .row:first-child .col-12:first-child{
-        border-bottom: 1px solid @frame-color;
+        border-bottom: 0.5px solid @frame-color;
     }
 }
 
 div.row>*:first-child{
     padding: @md-pad;
 }
-
-.lightest-color{
-    color: @lightest-color;
-}
-
 .active{
     font-weight: bold!important;
 }
-
-.no-display{
-    display: none;
+.btn{
+    margin: 8px;
+    &.btn-outline-dark{
+        color: @frame-color;
+        border-color: @frame-color;
+        &:hover{
+            background-color: @frame-color;
+            border-color: @frame-color;
+            color: @lightest-color;
+        }
+    }
 }
-
 .init-display{
     display: initial;
 }
-
+.lightest-color{
+    color: @lightest-color;
+}
+.no-display{
+    display: none;
+}
 @media screen and (max-width: 767px){
     body h1{
         font-size: @mxl-fs;

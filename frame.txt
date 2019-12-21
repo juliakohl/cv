@@ -19,12 +19,13 @@
         
         <!-- Custom CSS -->
         <link rel="stylesheet" href="styles.css">
+        
     </head>
     <body>
         <div class="frame" id="frame">
             <div class="nav">
                 <ul>
-                    <li><a href="index.html"><img src="images\juk.png" alt="Foto Julia Kohl" class="profile-img"></a></li>
+                    <li><a href="#"><img src="images\juk.webp" alt="Foto Julia Kohl" class="profile-img"></a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Über mich</a></li>
                     <li><a href="projects.html">Projekte</a></li>
@@ -35,7 +36,7 @@
             <div class="mnav">
                 <i class="flaticon-error" id="menu-icon" onclick="toggleNav()"></i>
                 <ul>
-                    <li><a href="#"><img src="images\juk.png" alt="Foto Julia Kohl" class="profile-img"></a></li>
+                    <li><a href="index.html"><img src="images\juk.webp" alt="Foto Julia Kohl" class="profile-img"></a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Über mich</a></li>
                     <li><a href="projects.html">Projekte</a></li>
@@ -70,22 +71,22 @@
                 </div>
             </div>
             <div class="credits">
-                <div id="smashicons">
+                <div id="smashicons" class="text-muted">
                     Icons made by 
-                    <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> 
+                    <a target="_blank" href="https://www.flaticon.com/authors/smashicons" class="text-muted" title="Smashicons">Smashicons</a> 
                      & 
-                    <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+                    <a target="_blank" href="https://www.flaticon.com/authors/freepik" class="text-muted" title="Freepik">Freepik</a>
                     from 
-                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    <a target="_blank" href="https://www.flaticon.com/" class="text-muted" title="Flaticon">www.flaticon.com</a>
                 </div>
             </div>
             <div class="copyright">
                 <span id="c-jhk">© Julia Helmine Kohl 2019</span>
                 <span class="socials">
-                    <a href="" class="icon"><i class="flaticon-051-instagram"></i></a>
-                    <a href="" class="icon"><i class="flaticon-051-linkedin"></i></a>
-                    <a href="" class="icon"><i class="flaticon-051-dribbble"></i></a>
-                    <a href="" class="icon"><i class="flaticon-051-gmail"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/ju_kohl/?hl=en" class="icon"><i class="flaticon-051-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/julia-kohl-9a3695162/" class="icon"><i class="flaticon-051-linkedin"></i></a>
+                    <a target="_blank" href="https://dribbble.com/ju_kohl" class="icon"><i class="flaticon-051-dribbble"></i></a>
+                    <a target="_blank" href="mailto:julia@kohl.uno" class="icon"><i class="flaticon-051-gmail"></i></a>
                 </span>
             </div>
         </div>
