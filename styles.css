@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 1.1rem;
-  background-image: url('images/Standard.jpg');
+  background-image: url('images/Standard.webp');
 }
 body a {
   color: white;
@@ -43,7 +43,7 @@ body div.frame {
   position: relative;
   padding: 2rem 2rem 4rem 12rem;
   background-color: #001210;
-  background-image: url('images/sea.jpg');
+  background-image: url('images/sea.webp');
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -201,7 +201,7 @@ body div.copyright {
 .layout-1-2:not(.sm) .row div.col-lg-6 .row:first-child .col-12:first-child {
   border-bottom: 0.5px solid #001210;
 }
-div.row > *:first-child {
+div.row.layout-1-2 > *:first-child {
   padding: 2rem;
 }
 .active {
@@ -222,6 +222,9 @@ div.row > *:first-child {
   border-color: #001210;
   color: white;
 }
+.highlight {
+  background-color: #ECB499 !important;
+}
 .init-display {
   display: initial;
 }
@@ -230,6 +233,12 @@ div.row > *:first-child {
 }
 .no-display {
   display: none;
+}
+.progress {
+  margin-bottom: 30px;
+}
+.progress .progress-bar {
+  background-color: #134b66;
 }
 @media screen and (max-width: 767px) {
   body h1 {

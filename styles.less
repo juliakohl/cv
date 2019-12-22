@@ -3,6 +3,8 @@
 @frame-color: #001210;
 @lightest-color: white;
 @mute-color: rgb(48, 48, 77);
+@alt-color: #134b66;
+@contrast-color: #ECB499;
 
 @special-font: 'Poiret One', cursive;
 @h1-font: 'Great Vibes', cursive;
@@ -20,7 +22,7 @@ body{
     font-family: @basic-font;
     color: @lightest-color;
     font-size: @md-fs;
-    background-image: url('images/Standard.jpg');
+    background-image: url('images/Standard.webp');
     
     a{
         color: @lightest-color;
@@ -62,7 +64,7 @@ body{
             position: relative;
             padding: 2rem 2rem 4rem 12rem;
             background-color: @frame-color;
-            background-image: url('images/sea.jpg');
+            background-image: url('images/sea.webp');
             background-size: cover;
             width: 100vw;
             height: 100vh;
@@ -232,7 +234,7 @@ body{
     }
 }
 
-div.row>*:first-child{
+div.row.layout-1-2>*:first-child{
     padding: @md-pad;
 }
 .active{
@@ -253,6 +255,9 @@ div.row>*:first-child{
         }
     }
 }
+.highlight{
+    background-color: @contrast-color!important;
+}
 .init-display{
     display: initial;
 }
@@ -261,6 +266,12 @@ div.row>*:first-child{
 }
 .no-display{
     display: none;
+}
+.progress{
+    margin-bottom: 30px;
+    .progress-bar{
+        background-color: @alt-color;
+    }
 }
 @media screen and (max-width: 767px){
     body h1{
