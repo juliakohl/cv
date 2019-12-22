@@ -22,7 +22,7 @@ body h1 {
 body h1.mobile {
   margin-bottom: 0;
   line-height: 110%;
-  margin: 10%;
+  padding: 10%;
   font-size: 250%;
 }
 body h1 small {
@@ -42,8 +42,8 @@ body ul {
 body div.frame {
   position: relative;
   padding: 2rem 2rem 4rem 12rem;
-  background-color: #0c0805;
-  background-image: url('images/Standard.jpg');
+  background-color: #001210;
+  background-image: url('images/sea.jpg');
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -78,7 +78,7 @@ body div.frame .mnav {
   text-align: center;
   height: 100vh;
   width: 175px;
-  background-color: #0c0805;
+  background-color: #001210;
   display: none;
   position: absolute;
   left: 0;
@@ -99,10 +99,14 @@ body div.frame .mnav.inactive ul {
 body div.frame .mnav.inactive i {
   position: absolute;
   left: 0;
-  color: #0c0805;
+  color: #001210;
 }
 body div.frame .mnav.inactive i#menu-icon {
   font-size: 32px!important;
+}
+body div.frame .mnav.inactive i#menu-icon.flaticon-menu-1 {
+  top: 0.5rem;
+  left: 1.5rem;
 }
 body div.frame .mnav.inactive .mcredits {
   display: none;
@@ -142,7 +146,7 @@ body div.frame .mnav .mcopyright {
   display: initial;
 }
 body div.content {
-  color: #0c0805;
+  color: #001210;
   background-color: white;
   text-align: center;
   width: 100%;
@@ -153,7 +157,14 @@ body div.content {
   position: relative;
 }
 body div.content a {
-  color: #0c0805;
+  color: #001210;
+}
+body div.content.mobile {
+  background-image: url('images/sea.jpg');
+  background-size: cover;
+}
+body div.content.mobile > * {
+  background-color: rgba(255, 255, 255, 0.75);
 }
 body div.credits {
   position: absolute;
@@ -173,10 +184,10 @@ body div.copyright {
   width: 50%;
 }
 .layout-1-2:not(.sm) .row div.col-lg-6:first-child {
-  border-right: 0.5px solid #0c0805;
+  border-right: 0.5px solid #001210;
 }
 .layout-1-2:not(.sm) .row div.col-lg-6 .row:first-child .col-12:first-child {
-  border-bottom: 0.5px solid #0c0805;
+  border-bottom: 0.5px solid #001210;
 }
 div.row > *:first-child {
   padding: 2rem;
@@ -188,12 +199,12 @@ div.row > *:first-child {
   margin: 8px;
 }
 .btn.btn-outline-dark {
-  color: #0c0805;
-  border-color: #0c0805;
+  color: #001210;
+  border-color: #001210;
 }
 .btn.btn-outline-dark:hover {
-  background-color: #0c0805;
-  border-color: #0c0805;
+  background-color: #001210;
+  border-color: #001210;
   color: white;
 }
 .init-display {

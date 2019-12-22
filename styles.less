@@ -1,5 +1,6 @@
 // @frame-color: rgb(18, 18, 29);
-@frame-color: #0c0805;
+// @frame-color: #0c0805;
+@frame-color: #001210;
 @lightest-color: white;
 @mute-color: rgb(48, 48, 77);
 
@@ -39,7 +40,7 @@ body{
         &.mobile{
             margin-bottom: 0;
             line-height: 110%;
-            margin: 10%;
+            padding: 10%;
             font-size: @mxl-fs;
         }
         small{
@@ -61,7 +62,7 @@ body{
             position: relative;
             padding: 2rem 2rem 4rem 12rem;
             background-color: @frame-color;
-            background-image: url('images/Standard.jpg');
+            background-image: url('images/sea.jpg');
             background-size: cover;
             width: 100vw;
             height: 100vh;
@@ -104,6 +105,10 @@ body{
                         color: @frame-color;
                         &#menu-icon{
                             font-size: 32px!important;
+                            &.flaticon-menu-1{
+                                top: 0.5rem;
+                                left: 1.5rem;
+                            }
                         }
                     }
                     .mcredits{
@@ -171,6 +176,13 @@ body{
             position: relative;
             a{
                 color: @frame-color;
+            }
+            &.mobile{
+                background-image: url('images/sea.jpg');
+                background-size: cover;
+                &>*{
+                    background-color: rgba(255, 255, 255, 0.75);
+                }
             }
         }
         &.credits{
