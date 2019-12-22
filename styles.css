@@ -162,6 +162,12 @@ body div.content {
   overflow-x: hidden;
   position: relative;
 }
+body div.content .align-left {
+  text-align: left;
+}
+body div.content label {
+  text-align: left;
+}
 body div.content a {
   color: #001210;
 }
@@ -200,6 +206,9 @@ div.row > *:first-child {
 }
 .active {
   font-weight: bold!important;
+}
+.align-left {
+  text-align: left;
 }
 .btn {
   margin: 8px;
