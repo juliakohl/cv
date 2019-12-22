@@ -27,12 +27,13 @@
         <div class="frame" id="frame">
             <div class="nav">
                 <ul>
-                    <li><a href="#"><img src="images\juk.webp" alt="Foto Julia Kohl" class="profile-img"></a></li>
+                    <li><a href="index.html"><img src="images\juk.webp" alt="Foto Julia Kohl" class="profile-img"></a></li>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Über mich</a></li>
-                    <li><a href="projects.html">Projekte</a></li>
-                    <li><a href="skills.html">Fähigkeiten</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="about.html">Über mich</a></li> -->
+                    <!-- <li><a href="projects.html">Projekte</a></li> -->
+                    <li><a class="active" href="skills.html">Fähigkeiten</a></li>
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li>Bald mehr ...</li>
                 </ul>
             </div>
             <div class="mnav">
@@ -40,11 +41,26 @@
                 <ul>
                     <li><a href="index.html"><img src="images\juk.webp" alt="Foto Julia Kohl" class="profile-img"></a></li>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Über mich</a></li>
-                    <li><a href="projects.html">Projekte</a></li>
-                    <li><a href="skills.html">Fähigkeiten</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="about.html">Über mich</a></li> -->
+                    <!-- <li><a href="projects.html">Projekte</a></li> -->
+                    <li><a class="active" href="skills.html">Fähigkeiten</a></li>
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li>Bald mehr ...</li>
                 </ul>
+                <div class="mcredits">
+                    <div class="text-muted">
+                        Photo by Frederick Tubiermont on Unsplash<br>
+                        Icons made by 
+                        <a target="_blank" href="https://www.flaticon.com/authors/smashicons" class="text-muted" title="Smashicons">Smashicons</a> 
+                         & 
+                        <a target="_blank" href="https://www.flaticon.com/authors/freepik" class="text-muted" title="Freepik">Freepik</a>
+                        from 
+                        <a target="_blank" href="https://www.flaticon.com/" class="text-muted" title="Flaticon">www.flaticon.com</a>
+                    </div>
+                </div>
+                <div class="mcopyright">
+                    <span id="c-jhk">© Julia Helmine Kohl 2019</span>
+                </div>
             </div>
             <div class="content">
                 <!-- <span class="subtitle">Hi, ich bin</span> -->
@@ -54,38 +70,48 @@
                 </h1>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-6 align-left">
-                            <label for="webProg">Web Programmierung</label>
+                        <div class="col-lg-6 align-left" id="module">
+                            <h2>
+                                <label for="module">Studium</label>
+                            </h2>    
+                            <label for="webProg">Web Programmierung (HTML, CSS, javaScript, PHP)</label>
                             <div class="progress" id="webProg">
-                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">sehr gut - 1,0</div>
+                                <div class="progress-bar  highlight" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">sehr gut - 1,0</div>
                             </div> 
                             <label for="statistik">Statistik</label>
                             <div class="progress" id="statistik">
-                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">sehr gut - 1,0</div>
+                                <div class="progress-bar  highlight" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">sehr gut - 1,0</div>
                             </div>                            
                             <label for="ux">Usability & Oberflächengestaltung</label>
                             <div class="progress" id="ux">
-                                <div class="progress-bar" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">sehr gut - 1,3</div>
+                                <div class="progress-bar  highlight" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">sehr gut - 1,3</div>
                             </div>                            
                             <label for="dz">Digitale Zeichensysteme</label>
                             <div class="progress" id="dz">
-                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">gut - 2,0</div>
+                                <div class="progress-bar highlight" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">gut - 2,0</div>
+                            </div>
+                            <div>
+                                Außerdem: 
+                                <ul>
+                                    <li>Mathematik I - 1,3</li>
+                                    <li>Mathematik II - 1,7</li>
+                                    <li>Web-Technologien - 1,7</li>
+                                    <li>Grundlagen Informatik und E-Commerce - 2,0</li>
+                                    <li>Grundlagen der Wirtschaftswissenschaften - 3,3</li>
+                                    <li>English for E-Commerce - 2,0</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-lg-6 align-left">
+                        <div class="col-lg-6 align-left" id="sonst">
+                            <h2>
+                                <label for="sonst">Programme etc.</label>
+                            </h2>    
                             <label for="xd">Adobe Xd</label>
                             <div class="progress" id="xd">
                                 <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">regelmäßiger Gebrauch</div>
                             </div> 
-                            <label for="webProg">Web Programmierung</label>
-                            <div class="progress" id="webProg">
-                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">sehr gut - 1,0</div>
-                            </div> 
-                            <label for="webProg">Web Programmierung</label>
-                            <div class="progress" id="webProg">
-                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">sehr gut - 1,0</div>
-                            </div> 
-
+                            <br>
+                            Fortsetzung folgt ...
                         </div>
                     </div>
                 </div>

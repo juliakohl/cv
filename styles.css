@@ -178,6 +178,7 @@ body div.content.mobile {
 }
 body div.content.mobile > * {
   background-color: rgba(255, 255, 255, 0.75);
+  padding: 6%;
 }
 body div.credits {
   position: absolute;
@@ -224,7 +225,7 @@ div.row.layout-1-2 > *:first-child {
   color: white;
 }
 .highlight {
-  background-color: #ECB499 !important;
+  background-color: #eb814c !important;
 }
 .init-display {
   display: initial;
