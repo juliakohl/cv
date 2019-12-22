@@ -66,6 +66,9 @@ body div.frame .nav ul li {
   margin: 15px;
   margin-left: 0;
 }
+body div.frame .nav ul li.active {
+  font-weight: bold;
+}
 body div.frame .nav ul .profile-img {
   width: 75px;
   border-radius: 100%;
@@ -95,6 +98,9 @@ body div.frame .mnav.inactive {
 }
 body div.frame .mnav.inactive ul {
   display: none;
+}
+body div.frame .mnav.inactive ul li.active {
+  font-weight: bold;
 }
 body div.frame .mnav.inactive i {
   position: absolute;

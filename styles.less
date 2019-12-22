@@ -81,6 +81,9 @@ body{
                     li{
                         margin: 15px;
                         margin-left: 0;
+                        &.active{
+                            font-weight: bold;
+                        }
                     }
                     .profile-img{
                         width: 75px;
@@ -98,6 +101,11 @@ body{
                     padding: 0;
                     ul{
                         display: none;
+                        li{
+                            &.active{
+                                font-weight: bold;
+                            }    
+                        }
                     }
                     i{
                         position: absolute;
@@ -250,4 +258,3 @@ div.row>*:first-child{
         font-size: @mxl-fs;
     }
 }
-
