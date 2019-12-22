@@ -31,19 +31,6 @@ window.addEventListener('resize', function () {
 	}
 }, false);
 
-if(viewportWidth < 992){
-    document.querySelector(".layout-1-2").classList.add("sm");
-}
-
-window.addEventListener('resize', function () {
-	viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-	if (viewportWidth >= 992) {
-        document.querySelector(".layout-1-2").classList.remove("sm");
-	} else {
-        document.querySelector(".layout-1-2").classList.add("sm");
-	}
-}, false);
-
 function toggleNav(){
 	if(document.querySelector(".mnav").classList.contains("inactive")){
 		document.querySelector(".mnav").classList.remove("inactive");
