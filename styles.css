@@ -109,10 +109,15 @@ body div.frame .mnav.inactive i {
 }
 body div.frame .mnav.inactive i#menu-icon {
   font-size: 32px!important;
+  font-weight: bold;
 }
 body div.frame .mnav.inactive i#menu-icon.flaticon-menu-1 {
   top: 0.5rem;
   left: 1.5rem;
+}
+body div.frame .mnav.inactive i#menu-icon.flaticon-menu-1:before {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 100%;
 }
 body div.frame .mnav.inactive .mcredits {
   display: none;
