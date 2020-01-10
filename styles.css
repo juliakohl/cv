@@ -116,7 +116,7 @@ body div.frame .mnav.inactive i#menu-icon.flaticon-menu-1 {
   left: 1.5rem;
 }
 body div.frame .mnav.inactive i#menu-icon.flaticon-menu-1:before {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.825);
   border-radius: 100%;
 }
 body div.frame .mnav.inactive .mcredits {
@@ -182,7 +182,7 @@ body div.content.mobile {
   background-color: unset;
 }
 body div.content.mobile > * {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.825);
   padding: 6%;
 }
 body div.credits {
